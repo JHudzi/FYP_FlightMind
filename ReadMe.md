@@ -28,6 +28,7 @@
     3. repo init -u https://github.com/Parrot-Developers/groundsdk-manifest.git
     4. repo sync
     + (If some libraries do not install when activating olympe env use pip install to get them)
+    5. cd ~/build.sh -p olympe-linux -A all final -j
 
 * CUDDN (for nvidia GPUs only):
     Follow Ubuntu 18.04 instructions on
