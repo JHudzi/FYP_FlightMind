@@ -29,6 +29,7 @@
     4. repo sync
     + (If some libraries do not install when activating olympe env use pip install to get them)
     5. cd ~/build.sh -p olympe-linux -A all final -j
+    + (Again if there are missing libraries during the buils, pip install them)
 
 * CUDDN (for nvidia GPUs only):
     Follow Ubuntu 18.04 instructions on
