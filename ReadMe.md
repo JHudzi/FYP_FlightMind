@@ -19,6 +19,7 @@
 * Sklearn
 * Imutils
 * Pickle
+* splitfolders
 ***
 ## Installation: (Ubuntu 18.04 ONLT!)
 * OLYMPE:
