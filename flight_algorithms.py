@@ -1,9 +1,13 @@
 """
 Author: Josh Hudziak
 Date: 30/04/21
-Copyright:
+Copyright:      This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. 
+                To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
 Dependencies: Ubuntu 18.04, Olympe, Python, OpenCV, Numpy, TensorFlow GPU, Sklearn, Imutils, Pickle
+
+Purpose:        In this file functions are used to write and read tro a text file what instructions the drone is to carry out.
+                This file is needed due to a breakdown of asynchronous features when streaming from the drone.
 
 Installation: Ubuntu 18.04 ONLT!
                 OLYMPE:

@@ -5,7 +5,10 @@
 ***
 ## Copyright:
     This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
-
+***
+## Purpose:
+    The end goal of this project was to create a fully autonomously navigating UAV using a CNN (Convolutional Neural Network). 
+***
 ## Dependencies: 
     * Ubuntu 18.04
     * Olympe 
@@ -16,18 +19,18 @@
     * Sklearn
     * Imutils
     * Pickle
-
+***
 ## Installation: (Ubuntu 18.04 ONLT!)
-    ### OLYMPE:
+    * OLYMPE:
         1. cd $HOME
         2. mkdir code/parrot-groundsdk
         3. repo init -u https://github.com/Parrot-Developers/groundsdk-manifest.git
         4. repo sync
         + (If some libraries do not install when activating olympe env use pip install to get them)
 
-    ### CUDDN (for nvidia GPUs only):
+    * CUDDN (for nvidia GPUs only):
         Follow Ubuntu 18.04 instructions on
         https://tensorflow.org/install/gpu
         
-    ### Tensorflow:
-        pip install tensorflow *Remeber to be in the Olympe enviroment *version >2.0 will be GPU capable
+    * Tensorflow:
+        pip install tensorflow **Remeber to be in the Olympe enviroment *version >2.0 will be GPU capable**

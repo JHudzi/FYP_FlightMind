@@ -1,7 +1,11 @@
 """
 Author: Josh Hudziak
 Date: 30/04/21
-Copyright:
+Copyright:      This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. 
+                To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
+Purpose:        In this file the UAV automation is created by predicting wether the UAV should turn or not based
+                upon video streaming from the UAV. A ResNet model, that has been loaded in, will make these predictions.
 
 Dependencies: Ubuntu 18.04, Olympe, Python, OpenCV, Numpy, TensorFlow GPU, Sklearn, Imutils, Pickle
 
@@ -62,7 +66,7 @@ olympe.log.update_config({"loggers": {"olympe": {"level": "WARNING"}}})
 DRONE_IP = "192.168.53.1"
 
 print("***** [INFO] loading model and label binarizer *****")
-model = load_model("MODELS/New_Data_Deer.h5")
+model = load_model("MODELS/Spear.h5")
 lb = pickle.loads(open("MODELS/lb.pickle", "rb").read())
 
 """

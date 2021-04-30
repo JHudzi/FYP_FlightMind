@@ -1,9 +1,13 @@
 """
 Author: Josh Hudziak
 Date: 30/04/21
-Copyright:
+Copyright:      This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. 
+                To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
 Dependencies: Ubuntu 18.04, Olympe, Python, OpenCV, Numpy, TensorFlow GPU, Sklearn, Imutils, Pickle
+
+Purpose:        Thisfile is used to test the automation process and the evaluation of the model when it is running on a video that is loaded. 
+                The predictions made upon the video will then control the drone.
 
 Installation: Ubuntu 18.04 ONLT!
                 OLYMPE:
@@ -58,10 +62,9 @@ video_classification()
 def video_classification(drone):
 
     # load the trained model and label binarizer from disk
-    print("[INFO] loading model and label binarizer...")
-    model = load_model("MODELS/New_Data_Duck.h5")
+    #print("[INFO] loading model and label binarizer...")
+    model = load_model("MODELS/Spear.h5")
     lb = pickle.loads(open("MODELS/lb.pickle", "rb").read())
-    #lb = {"classes_": ['right', 'left', 'centre']}
 
     # initialize the predictions queue
     Q = deque(maxlen = 2)
@@ -86,13 +89,11 @@ def video_classification(drone):
             (H, W) = frame.shape[:2]
             
         # clone the output frame, then convert it from BGR to RGB
-        # ordering, resize the frame to a fixed 224x224, and then
-        # perform mean subtraction
+        # ordering, resize the frame to a fixed 250x250
         output = frame.copy()
-        #frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         frame = cv2.resize(frame, (250, 250)).astype("float32")
 
-        
         # make predictions on the frame and then update the predictions
         # queue
         preds = model.predict(np.expand_dims(frame, axis=0))[0]
