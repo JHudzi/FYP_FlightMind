@@ -1,0 +1,1 @@
+Evaluation images are stored here.
