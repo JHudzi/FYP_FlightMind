@@ -1,0 +1,193 @@
+<!--
+File: index.html
+Author: Josh Hudziak
+File Created: 03-05-2021
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>UAV Navigation Through a Convolutional Neural Network</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="Assets/uav.png">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://use.fontawesome.com/4202ba2660.js"></script>
+</head>
+
+<body>
+
+    <div class="navbar bg-purple">
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand" href="#">
+                <img src="Assets/uav.png" width="30" height="30" class="d-inline-block align-top" alt="Uav Icon"> UAV Navigation Through a Convolutional Neural Network
+            </a>
+            <div class="row">
+                <div>
+                    <button type="button" class="navbar-toggler" onclick="location.href='https://github.com/JHudzi'">
+                        <span>
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+                <div>
+                    <button type="button" class="navbar-toggler" onclick="location.href='https://www.linkedin.com/in/josh-hudziak-493204187/'">
+                        <span>
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid app-content">
+        <div class="col-sm-12">
+            <div class=row>
+                <div class="col-xl-2 col-md-12">
+                    <!-- Docs -->                    
+                    <a href="https://drive.google.com/file/d/1FtJ7gAS73NaGVIusG2_UVH3KguPMTe5I/view?usp=sharing" target="_blank">
+                        <div class="card primaryCard card-as-button">
+                            <div class="card-header">
+                                <span>
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                </span>
+                                <span class="nav-text">
+                                    Research Report
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1oM7XsEY8WEay34yPGydEIOjNwFG3Of_r/view?usp=sharing" target="_blank">
+                        <div class="card primaryCard card-as-button">
+                            <div class="card-header">
+                                <span>
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                </span>
+                                <span class="nav-text">
+                                    Functional Specification
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1loSQZjnpAEJy2mFm-yVgv7B3oaJ6fsy4/view?usp=sharing" target="_blank">
+                        <div class="card primaryCard card-as-button">
+                            <div class="card-header">
+                                <span>
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                </span>
+                                <span class="nav-text">
+                                    Design Manual
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://drive.google.com/file/d/11G8aOwY7ZN_63c42MMMSXeE-34GMTLMS/view?usp=sharing" target="_blank">
+                        <div class="card primaryCard card-as-button">
+                            <div class="card-header">
+                                <span>
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                </span>
+                                <span class="nav-text">
+                                    Technical Manual
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1YRI2KO27aJOewTGNKSrzcxGcybUtYksD/view?usp=sharing" target="_blank">
+                        <div class="card primaryCard card-as-button">
+                            <div class="card-header">
+                                <span>
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                </span>
+                                <span class="nav-text">
+                                    Final Report
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Project Info -->                    
+                    <div class="card primaryCard">
+                        <div class="card-body">
+                            <img src="Assets/vision.png" width="30" height="30" alt="computer vision icon">
+                            <br>
+                            <small>Student Name: </small>
+                            <h6 class="card-title">Josh Hudziak</h6>
+                            <small>Email: </small>
+                            <span class="inline-small-text">josh.hudziak@gmail.com</span>
+                            <small>Supervisor: </small>
+                            <span class="inline-small-text">Dr. Oisin Cawley</span>
+                            <small>Date: </small>
+                            <span class="inline-small-text">30th April 2021</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-md-8">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card primaryCard">
+                                <div class="card-body">
+                                    <small>UAV &amp; Computer Vision </small>
+                                    <h1>UAV Navigation Through a Convolutional Neural Network</h1>
+                                    <p>The Project is a proof of concept that aims to make predictions coming from a video stream on a
+                                        Parrot Anafi drone. This prediction will help navigate the drone and feed instructions about how
+                                        to maintain course on a given route.</p>
+                                </div>
+                                <!-- card body end -->
+                            </div>
+                            <!-- card element end -->
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card primaryCard">
+                                <div class="card-body">
+                                    <div class="row justify-content-center">
+                                        <div class="col-10">
+                                            <iframe width="600" height="345" src="https://r2---sn-q0c7rn76.c.drive.google.com/videoplayback?expire=1620144152&ei=2DeRYPqFKveXwtQPtuGUiAc&ip=80.233.34.220&cp=QVRHUkJfU1FTQ1hPOkpOQjNKVExsbld4SlhOTEItRHV2ZEZMdnBCSDhqQm1QczZDMUQ3ZnRCMFk&id=a499ea81af0c7584&itag=37&source=webdrive&requiressl=yes&mh=BI&mm=32&mn=sn-q0c7rn76&ms=su&mv=m&mvi=2&pl=24&ttl=transient&susc=dr&driveid=16Hw78lnXdNsjTu5XiJVxjkFF-uNY7lDt&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=484.484&lmt=1620129407963984&mt=1620129621&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRgIhAO0lu3yWZAvCDU1IPMKH3vvXsz-PpqxsQyDtvaHjso6eAiEApfduY3CKbbRzdzuuMNgAziR7S8kzS3VFq89URB3bm8A=&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIhALn8f2B24h9skPe5mfukR9VbeDcZAZPftUN8DhTrIBvuAiBX5GzyZ7Xqp2oW6xX4Ag9OZDIGL71Kp1p-Mm7JubULyw==&cpn=GhP-DWxzGIBH9hZr&c=WEB_EMBEDDED_PLAYER&cver=1.20210428.1.1"> </iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card body end -->
+                            </div>
+                            <!-- card element end -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Col -->                
+                <div class="col-xl-2 col-md-4">
+                    <!-- About -->                    
+                    <div class="card primaryCard">
+                        <div class="card-header text-center">
+                            <small>Created by: Josh Hudziak</small>
+                        </div>
+                    </div>
+                    <!-- About -->                    
+                    <div class="card primaryCard">
+                        <div class="card-body wide">
+                            <small>About the Project </small>
+                            <span class="inline-small-text">
+                                The purpose of this project was to create an autonomous UAV. this UAV can navigate through roads,
+                                paths and tracks. This technology is becoming more prevalent with the emerging UAV technologies
+                                around the world. Autonomous UAVs have use cases in search and rescue, medication delivery,
+                                military surveillance as well as surveillance in the construction sector. This autonomous navigation is
+                                possible thanks to cutting edge research in deep learning and technologies such as Tensorflow and the Parrot SDK.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

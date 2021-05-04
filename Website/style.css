@@ -1,0 +1,261 @@
+/* 
+* File: style.css
+* Author: Josh Hudziak
+* File Created: 03-05-2021 
+*/
+
+ @import url('https://fonts.googleapis.com/css?family=Padauk');
+ @import url('https://fonts.googleapis.com/css?family=Montserrat:300&subset=cyrillic');
+ 
+ html {
+     position: relative;
+     min-height: 100%;
+ }
+
+ body {
+     background: url(Assets/bg.jpg);
+     background-position: 100%;
+     background-repeat: no-repeat;
+     background-size: cover;
+     font-family: 'Montserrat', sans-serif;;
+     font-size: .8rem;
+     margin: 0 0 50px 0!important;
+     padding: 0 !important;    
+ }
+ .app-content { margin-top: 1rem}
+ 
+ h1, h2, h3, h4, h5, h6 { font-weight: bold}
+ 
+ h1 { color: #8B008B}
+ 
+ /* .foalarm-text { font-family: 'Quantify'}
+ 
+ .navbar-brand { font-family: 'Quantify', sans-serif } */
+ 
+ .bg-purple { background: #8B008B	}
+ .bg-purple .fa { color: whitesmoke }
+ .bg-purple a { color: whitesmoke }
+ .bg-purple button { 
+     color: rgb(204, 208, 230);
+     cursor: pointer; cursor: hand;
+     text-transform: uppercase;
+     font-size: .9rem;
+  }
+ .bg-purple button:hover { color: white}
+ 
+ .bg-alert { 
+     background: #d36565;
+     color: whitesmoke
+  }
+ .badge {
+     margin-top: .4rem;
+     padding: .2rem, 0.2rem;
+     font-size: .5rem;
+ }
+ 
+ .primaryCard { 
+     border: none !important; border-radius: 0 !important; margin: .7rem 0 .7rem 0;
+     -webkit-box-shadow: 0px 0px 1px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+     -moz-box-shadow:    0px 0px 1px #ccc;  /* Firefox 3.5 - 3.6 */
+     box-shadow: 0px 0px 1px #ccc;
+ }
+ 
+ .primaryCard .form-controls { margin-top: 1rem;}
+ 
+ .card { border-radius: 0 !important; }
+ 
+ .card-header {
+     font-size: 1rem;
+     color: #c3c3c3;
+     border-radius: 0 !important;
+     /* padding: .5rem; */
+ }
+ 
+ .card-header i {
+     color: #c3c3c3;
+ }
+ 
+ .card-header-m {
+     font-size: 1.3rem;
+     font-weight: bold;
+     color: #1A5276;
+  }
+  .card .card-body {
+      padding: 2rem;
+      line-height: 120%;
+  }
+
+  .wide {
+      padding: 1rem !important;
+  }
+ 
+  .card .card-body .card-title {
+     padding: 0;
+     margin-bottom: .6rem;
+ }
+ 
+ a .card .card-header{
+     border-left: 3px solid #1A5276;
+ }
+ 
+ a .card.card-as-button:hover {
+     background-color: whitesmoke;
+     cursor: pointer;
+ }
+
+ .card-as-button .card-header {
+     padding-left: .7rem !important;
+ }
+ 
+ .card-header .btn {
+      padding: 0 .3rem;
+  }
+ 
+  .card-header a {
+     padding: 0;
+     color: #c3c3c3;
+ }
+ 
+ .card-header span i {
+     margin-right: 0.3rem;
+ }
+ 
+  .card .card-body small {
+      font-size: .6rem;
+      display: inline-block;
+      color: #c3c3c3;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      padding-bottom: 0;
+  }
+ 
+  .card .card-body .inline-small-text {
+     font-size: .6rem;     
+     display: block;
+     color: #333131;
+     margin-bottom: 0;
+     padding-bottom: 0;
+  }
+ 
+  .card .card-body .inline-small-text-alert {
+     color: whitesmoke;
+     margin-bottom: 0;
+     padding-bottom: 0;
+     font-size: .7rem;   
+     display: block;
+     overflow: hidden;          
+  }
+ 
+  .card .form-group label {
+      padding-bottom: 0;
+      margin-bottom: 0;
+  }
+ 
+  /* .card form button {
+      margin-left: .2rem !important;
+  } */
+ 
+  .card .active i {
+     color: #53c7b7;
+ }
+ 
+ .card .inactive i {
+     color: #c3c3c3
+ }
+ 
+ .card .card-footer a {
+     color: #c3c3c3
+ }
+     
+ 
+ /* Button restyle */
+ .btn { border: none; }
+ .btn-success { background: #448599; }
+ .btn-success:disabled { background: #b9d2da }
+ .btn-success:hover:not([disabled]) { background: #43a2a7 }
+ 
+ .btn-primary { background: #2b6da9; }
+ .btn-primary:disabled { background: #51799b }
+ .btn-primary:hover:not([disabled]) { background: #0b6bbe }
+ 
+ .btn-default { background: #814eb5; }
+ .btn-default:disabled { background: #8b789e }
+ .btn-default:hover:not([disabled]) { background: #6419b4 }
+ 
+ .btn-secondary { background: none; color: rgb(119, 116, 116); 
+     text-decoration: underline; font-style: italic; font-size: .7rem }
+ .btn-secondary:disabled { background: none }
+ .btn-secondary:hover:not([disabled]) { background: none; color: black }
+ 
+ .btn-success { background: #448599; }
+ .btn-success:disabled { background: #b9d2da }
+ .btn-success:hover:not([disabled]) { background: #43a2a7 }
+ 
+ a i { cursor: pointer !important }
+ a:hover { text-decoration: none }
+ 
+ .btn-social-icon {
+     color: #c3c3c5
+ }
+ 
+ .btn-social-icon:hover {
+     color: #448599
+ }
+ 
+ /* Modal -------------------------*/
+ .modal-content  {
+     -webkit-border-radius: 0px !important;
+     -moz-border-radius: 0px !important;
+     border-radius: 0px !important; 
+ }
+ 
+ .modal-header {
+     border-bottom: none !important;
+     padding-bottom: 0;
+ }
+ 
+ .modal-body small {
+     font-size: .6rem;
+     display: inline-block;
+     color: #c3c3c3;
+     text-transform: uppercase;
+     margin-bottom: 0;
+     padding-bottom: 0;
+ }
+ 
+ .modal-body .inline-small-text {
+     font-size: .7rem;     
+     display: block;
+     color: #333131;
+     margin-bottom: 0;
+     padding-bottom: 0;
+  }
+ 
+  .modal-body .btn-block {
+      margin-top: 1rem;
+  }
+ 
+ .footer {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     /* Set the fixed height of the footer here */
+     height: 50px;
+     line-height: 50px; /* Vertically center the text there */
+     background-color: #eeeeee;
+   }
+
+   .nav-text {
+       font-size: .7rem !important;
+   }
+
+   p {
+       line-height: 1.2rem;
+   }
+
+   .clickable:hover { 
+    -webkit-box-shadow: 0px 0px 1px #448599;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    0px 0px 1px #448599;  /* Firefox 3.5 - 3.6 */
+    box-shadow: 0px 0px 1px #448599;
+    cursor: pointer;
+}
